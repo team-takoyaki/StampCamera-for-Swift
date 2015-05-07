@@ -1,0 +1,424 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		59845ED51AFAF96600857ABD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59845ED41AFAF96600857ABD /* AppDelegate.swift */; };
+		59845ED71AFAF96600857ABD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59845ED61AFAF96600857ABD /* ViewController.swift */; };
+		59845EDA1AFAF96600857ABD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59845ED81AFAF96600857ABD /* Main.storyboard */; };
+		59845EDC1AFAF96600857ABD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59845EDB1AFAF96600857ABD /* Images.xcassets */; };
+		59845EDF1AFAF96600857ABD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59845EDD1AFAF96600857ABD /* LaunchScreen.xib */; };
+		59845EEB1AFAF96600857ABD /* MujoticonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59845EEA1AFAF96600857ABD /* MujoticonTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		59845EE51AFAF96600857ABD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 59845EC71AFAF96600857ABD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 59845ECE1AFAF96600857ABD;
+			remoteInfo = Mujoticon;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		59845ECF1AFAF96600857ABD /* Mujoticon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mujoticon.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		59845ED31AFAF96600857ABD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59845ED41AFAF96600857ABD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		59845ED61AFAF96600857ABD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		59845ED91AFAF96600857ABD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		59845EDB1AFAF96600857ABD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		59845EDE1AFAF96600857ABD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		59845EE41AFAF96600857ABD /* MujoticonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MujoticonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		59845EE91AFAF96600857ABD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59845EEA1AFAF96600857ABD /* MujoticonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MujoticonTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		59845ECC1AFAF96600857ABD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59845EE11AFAF96600857ABD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		59845EC61AFAF96600857ABD = {
+			isa = PBXGroup;
+			children = (
+				59845ED11AFAF96600857ABD /* Mujoticon */,
+				59845EE71AFAF96600857ABD /* MujoticonTests */,
+				59845ED01AFAF96600857ABD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		59845ED01AFAF96600857ABD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				59845ECF1AFAF96600857ABD /* Mujoticon.app */,
+				59845EE41AFAF96600857ABD /* MujoticonTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		59845ED11AFAF96600857ABD /* Mujoticon */ = {
+			isa = PBXGroup;
+			children = (
+				59845ED41AFAF96600857ABD /* AppDelegate.swift */,
+				59845ED61AFAF96600857ABD /* ViewController.swift */,
+				59845ED81AFAF96600857ABD /* Main.storyboard */,
+				59845EDB1AFAF96600857ABD /* Images.xcassets */,
+				59845EDD1AFAF96600857ABD /* LaunchScreen.xib */,
+				59845ED21AFAF96600857ABD /* Supporting Files */,
+			);
+			path = Mujoticon;
+			sourceTree = "<group>";
+		};
+		59845ED21AFAF96600857ABD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				59845ED31AFAF96600857ABD /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		59845EE71AFAF96600857ABD /* MujoticonTests */ = {
+			isa = PBXGroup;
+			children = (
+				59845EEA1AFAF96600857ABD /* MujoticonTests.swift */,
+				59845EE81AFAF96600857ABD /* Supporting Files */,
+			);
+			path = MujoticonTests;
+			sourceTree = "<group>";
+		};
+		59845EE81AFAF96600857ABD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				59845EE91AFAF96600857ABD /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		59845ECE1AFAF96600857ABD /* Mujoticon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 59845EEE1AFAF96600857ABD /* Build configuration list for PBXNativeTarget "Mujoticon" */;
+			buildPhases = (
+				59845ECB1AFAF96600857ABD /* Sources */,
+				59845ECC1AFAF96600857ABD /* Frameworks */,
+				59845ECD1AFAF96600857ABD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Mujoticon;
+			productName = Mujoticon;
+			productReference = 59845ECF1AFAF96600857ABD /* Mujoticon.app */;
+			productType = "com.apple.product-type.application";
+		};
+		59845EE31AFAF96600857ABD /* MujoticonTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 59845EF11AFAF96600857ABD /* Build configuration list for PBXNativeTarget "MujoticonTests" */;
+			buildPhases = (
+				59845EE01AFAF96600857ABD /* Sources */,
+				59845EE11AFAF96600857ABD /* Frameworks */,
+				59845EE21AFAF96600857ABD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				59845EE61AFAF96600857ABD /* PBXTargetDependency */,
+			);
+			name = MujoticonTests;
+			productName = MujoticonTests;
+			productReference = 59845EE41AFAF96600857ABD /* MujoticonTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		59845EC71AFAF96600857ABD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "UNUUU FOUNDATION";
+				TargetAttributes = {
+					59845ECE1AFAF96600857ABD = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					59845EE31AFAF96600857ABD = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = 59845ECE1AFAF96600857ABD;
+					};
+				};
+			};
+			buildConfigurationList = 59845ECA1AFAF96600857ABD /* Build configuration list for PBXProject "Mujoticon" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 59845EC61AFAF96600857ABD;
+			productRefGroup = 59845ED01AFAF96600857ABD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				59845ECE1AFAF96600857ABD /* Mujoticon */,
+				59845EE31AFAF96600857ABD /* MujoticonTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		59845ECD1AFAF96600857ABD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59845EDA1AFAF96600857ABD /* Main.storyboard in Resources */,
+				59845EDF1AFAF96600857ABD /* LaunchScreen.xib in Resources */,
+				59845EDC1AFAF96600857ABD /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59845EE21AFAF96600857ABD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		59845ECB1AFAF96600857ABD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59845ED71AFAF96600857ABD /* ViewController.swift in Sources */,
+				59845ED51AFAF96600857ABD /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59845EE01AFAF96600857ABD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59845EEB1AFAF96600857ABD /* MujoticonTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		59845EE61AFAF96600857ABD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 59845ECE1AFAF96600857ABD /* Mujoticon */;
+			targetProxy = 59845EE51AFAF96600857ABD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		59845ED81AFAF96600857ABD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				59845ED91AFAF96600857ABD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		59845EDD1AFAF96600857ABD /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				59845EDE1AFAF96600857ABD /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		59845EEC1AFAF96600857ABD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		59845EED1AFAF96600857ABD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		59845EEF1AFAF96600857ABD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Mujoticon/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		59845EF01AFAF96600857ABD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Mujoticon/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		59845EF21AFAF96600857ABD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MujoticonTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mujoticon.app/Mujoticon";
+			};
+			name = Debug;
+		};
+		59845EF31AFAF96600857ABD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MujoticonTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mujoticon.app/Mujoticon";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		59845ECA1AFAF96600857ABD /* Build configuration list for PBXProject "Mujoticon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59845EEC1AFAF96600857ABD /* Debug */,
+				59845EED1AFAF96600857ABD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		59845EEE1AFAF96600857ABD /* Build configuration list for PBXNativeTarget "Mujoticon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59845EEF1AFAF96600857ABD /* Debug */,
+				59845EF01AFAF96600857ABD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		59845EF11AFAF96600857ABD /* Build configuration list for PBXNativeTarget "MujoticonTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59845EF21AFAF96600857ABD /* Debug */,
+				59845EF31AFAF96600857ABD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 59845EC71AFAF96600857ABD /* Project object */;
+}
