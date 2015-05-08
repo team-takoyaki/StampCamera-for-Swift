@@ -103,6 +103,15 @@ class EditViewController: UIViewController {
         alert.show()
     }
     
+    func goToCameraView() {
+        // CameraViewControllerへ
+        performSegueWithIdentifier("backToCameraView", sender: nil)
+    }
+    
+    @IBAction func didTapRetake(sender: AnyObject) {
+        self.goToCameraView()
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

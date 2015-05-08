@@ -17,9 +17,7 @@ class CameraViewController: UIViewController, TTKCameraDelegate  {
     @IBOutlet var changeAspectFrame2: UIView!
     
     var camera: TTKCamera!
-    
     var isSquare: Bool!
-    
     var isRearCamera: Bool!
     
     override func viewDidLoad() {
@@ -100,9 +98,18 @@ class CameraViewController: UIViewController, TTKCameraDelegate  {
         self.setAspect(self.isSquare)
     }
     
+    @IBAction func didTapBack(sender: AnyObject) {
+        self.goToTopView()
+    }
+    
     func goToEditView() {
         // EditViewControllerへ
         performSegueWithIdentifier("goToEditView", sender: nil)
+    }
+    
+    func goToTopView() {
+        // TopViewControllerへ
+        performSegueWithIdentifier("backToTopView", sender: nil)
     }
 }
 
