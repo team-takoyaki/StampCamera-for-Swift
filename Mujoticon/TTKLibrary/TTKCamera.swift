@@ -18,10 +18,10 @@ class TTKCamera : UIView {
         case FrontCamera
     }
     
-    var delegate: TTKCameraDelegate! = nil
+    var delegate: TTKCameraDelegate!
     var isSquare: Bool = true
     var session: AVCaptureSession!
-    var previewView: UIView?
+    var previewView: UIView!
     var stillImageOutput: AVCaptureStillImageOutput?
     var videoInput: AVCaptureDeviceInput!
 
@@ -59,9 +59,9 @@ class TTKCamera : UIView {
         self.session.commitConfiguration()
         
         let captureVideoPreviewLayer = AVCaptureVideoPreviewLayer(session: self.session)
-        captureVideoPreviewLayer.frame = self.previewView!.frame
+        captureVideoPreviewLayer.frame = self.previewView.frame
         captureVideoPreviewLayer.videoGravity = AVLayerVideoGravityResizeAspectFill
-        let previewLayer = self.previewView!.layer
+        let previewLayer = self.previewView.layer
         previewLayer.masksToBounds = true
         previewLayer.addSublayer(captureVideoPreviewLayer)
         self.previewView!.backgroundColor = UIColor.redColor()

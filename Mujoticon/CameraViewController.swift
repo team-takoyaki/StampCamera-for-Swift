@@ -13,6 +13,9 @@ class CameraViewController: UIViewController, TTKCameraDelegate  {
     
     @IBOutlet var previewView: UIView!
     
+    @IBOutlet var changeAspectFrame1: UIView!
+    @IBOutlet var changeAspectFrame2: UIView!
+    
     var camera: TTKCamera!
     
     var isSquare: Bool!
@@ -22,6 +25,10 @@ class CameraViewController: UIViewController, TTKCameraDelegate  {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
         
         self.initWithView()
     }
@@ -29,11 +36,15 @@ class CameraViewController: UIViewController, TTKCameraDelegate  {
     func initWithView() {
         UIApplication.sharedApplication().statusBarHidden = true
         
-        self.camera = TTKCamera(frame: self.previewView.bounds, delegate: self)
+        let frame = CGRectMake(0, 0, self.previewView.frame.width, self.previewView.frame.height)
+        self.camera = TTKCamera(frame: frame, delegate: self)
         self.previewView.addSubview(self.camera)
+        // アスペクトの調整より下に表示する
+        self.camera.layer.zPosition = -1
         
         self.isSquare = true
         self.camera.isSquare = self.isSquare
+        self.setAspect(self.isSquare)
         
         self.isRearCamera = true
         self.setIsRearCamera(self.isRearCamera)
@@ -46,6 +57,18 @@ class CameraViewController: UIViewController, TTKCameraDelegate  {
             self.camera.setDeviceInputWithType(TTKCamera.DeviceType.RearCamera)
         } else {
             self.camera.setDeviceInputWithType(TTKCamera.DeviceType.FrontCamera)
+        }
+    }
+    
+    func setAspect(isSquare: Bool) {
+        // 正方形の時は正方形になるように薄黒いViewを表示
+        if (isSquare) {
+            self.changeAspectFrame1.hidden = false
+            self.changeAspectFrame2.hidden = false
+        // 3:4の時は薄黒いViewを非表示
+        } else {
+            self.changeAspectFrame1.hidden = true
+            self.changeAspectFrame2.hidden = true
         }
     }
 
@@ -70,6 +93,13 @@ class CameraViewController: UIViewController, TTKCameraDelegate  {
         self.setIsRearCamera(self.isRearCamera)
     }
 
+    @IBAction func didTapAspect(sender: AnyObject) {
+        // アスペクト比を変更する
+        self.isSquare = !self.isSquare
+        self.camera.isSquare = self.isSquare
+        self.setAspect(self.isSquare)
+    }
+    
     func goToEditView() {
         // EditViewControllerへ
         performSegueWithIdentifier("goToEditView", sender: nil)
