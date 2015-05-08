@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Cd8-HT-XKk">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="c3v-47-nXu">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -178,17 +178,56 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aHw-fK-0wR">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aHw-fK-0wR">
+                                <rect key="frame" x="0.0" y="75" width="600" height="450"/>
+                                <color key="backgroundColor" red="0.95294123890000004" green="0.59215688710000003" blue="0.15686275059999999" alpha="1" colorSpace="deviceRGB"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L4H-2I-jkH">
+                                <rect key="frame" x="22" y="550" width="56" height="30"/>
+                                <state key="normal" title="Reverse">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapReverse:" destination="c3v-47-nXu" eventType="touchUpInside" id="Ndt-CX-avi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eV8-nL-ixo">
+                                <rect key="frame" x="529" y="550" width="34" height="30"/>
+                                <state key="normal" title="Save">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapSave:" destination="c3v-47-nXu" eventType="touchUpInside" id="o4b-Qo-9a8"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstAttribute="centerY" secondItem="aHw-fK-0wR" secondAttribute="centerY" id="4bS-aH-yXZ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="aHw-fK-0wR" secondAttribute="trailing" constant="-16" id="4ck-pl-yre"/>
+                            <constraint firstItem="5qN-rg-bSO" firstAttribute="top" secondItem="L4H-2I-jkH" secondAttribute="bottom" constant="20" id="AL1-oS-tBp"/>
                             <constraint firstItem="aHw-fK-0wR" firstAttribute="top" secondItem="fZ3-eN-oM7" secondAttribute="topMargin" id="DrJ-5I-MSX"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="eV8-nL-ixo" secondAttribute="trailing" constant="21" id="Of2-8x-mdc"/>
                             <constraint firstItem="aHw-fK-0wR" firstAttribute="leading" secondItem="fZ3-eN-oM7" secondAttribute="leadingMargin" constant="-16" id="RJl-xO-88Q"/>
+                            <constraint firstItem="5qN-rg-bSO" firstAttribute="top" secondItem="eV8-nL-ixo" secondAttribute="bottom" constant="20" id="Ur4-Hs-cSS"/>
+                            <constraint firstItem="aHw-fK-0wR" firstAttribute="top" secondItem="nrh-DV-oyr" secondAttribute="bottom" constant="41" id="YiU-jI-5KO"/>
+                            <constraint firstItem="eV8-nL-ixo" firstAttribute="top" secondItem="aHw-fK-0wR" secondAttribute="bottom" constant="25" id="aO1-Pw-41e"/>
+                            <constraint firstItem="L4H-2I-jkH" firstAttribute="leading" secondItem="fZ3-eN-oM7" secondAttribute="leadingMargin" constant="6" id="cwR-EP-SSd"/>
+                            <constraint firstItem="L4H-2I-jkH" firstAttribute="top" secondItem="aHw-fK-0wR" secondAttribute="bottom" constant="25" id="eC2-Gu-Hap"/>
+                            <constraint firstItem="L4H-2I-jkH" firstAttribute="top" secondItem="nrh-DV-oyr" secondAttribute="bottom" constant="521" id="kUo-ft-aRh"/>
+                            <constraint firstAttribute="centerX" secondItem="aHw-fK-0wR" secondAttribute="centerX" id="rp4-p2-oqB"/>
                             <constraint firstItem="5qN-rg-bSO" firstAttribute="top" secondItem="aHw-fK-0wR" secondAttribute="bottom" id="tAg-lg-4PX"/>
+                            <constraint firstItem="5qN-rg-bSO" firstAttribute="top" secondItem="aHw-fK-0wR" secondAttribute="bottom" constant="89" id="vUA-Gz-eRd"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="DrJ-5I-MSX"/>
+                                <exclude reference="YiU-jI-5KO"/>
+                                <exclude reference="kUo-ft-aRh"/>
+                                <exclude reference="tAg-lg-4PX"/>
+                                <exclude reference="vUA-Gz-eRd"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="imageView" destination="aHw-fK-0wR" id="PvP-Er-eNW"/>

@@ -19,5 +19,13 @@ class AppManager {
         }
         return sharedInstance!
     }
+    
+    init() {
+        self.initWithSetting()
+    }
+    
+    func initWithSetting() {
+        self.takenImage = UIImage(named: "abc.jpg")
+    }
 }
 

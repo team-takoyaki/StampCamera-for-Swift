@@ -20,6 +20,8 @@
 		59EC25331AFBBB3F00B78E89 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59EC25311AFBBB3F00B78E89 /* EditViewController.swift */; };
 		59EC25341AFBBB3F00B78E89 /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59EC25321AFBBB3F00B78E89 /* TopViewController.swift */; };
 		59EC25361AFBBE5500B78E89 /* AppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59EC25351AFBBE5500B78E89 /* AppManager.swift */; };
+		59EC25391AFC85CF00B78E89 /* abc.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 59EC25381AFC85CF00B78E89 /* abc.jpg */; };
+		59EC253B1AFC872000B78E89 /* def.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 59EC253A1AFC872000B78E89 /* def.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +52,8 @@
 		59EC25311AFBBB3F00B78E89 /* EditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
 		59EC25321AFBBB3F00B78E89 /* TopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopViewController.swift; sourceTree = "<group>"; };
 		59EC25351AFBBE5500B78E89 /* AppManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppManager.swift; sourceTree = "<group>"; };
+		59EC25381AFC85CF00B78E89 /* abc.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = abc.jpg; sourceTree = "<group>"; };
+		59EC253A1AFC872000B78E89 /* def.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = def.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +95,7 @@
 		59845ED11AFAF96600857ABD /* Mujoticon */ = {
 			isa = PBXGroup;
 			children = (
+				59EC25371AFC85CF00B78E89 /* Resources */,
 				59EC25281AFB92F700B78E89 /* TTKLibrary */,
 				59EC25351AFBBE5500B78E89 /* AppManager.swift */,
 				59845ED41AFAF96600857ABD /* AppDelegate.swift */,
@@ -139,6 +144,15 @@
 				59EC252F1AFBB84900B78E89 /* TTKEditImage.swift */,
 			);
 			path = TTKLibrary;
+			sourceTree = "<group>";
+		};
+		59EC25371AFC85CF00B78E89 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				59EC253A1AFC872000B78E89 /* def.jpg */,
+				59EC25381AFC85CF00B78E89 /* abc.jpg */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,7 +235,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59EC25391AFC85CF00B78E89 /* abc.jpg in Resources */,
 				59845EDA1AFAF96600857ABD /* Main.storyboard in Resources */,
+				59EC253B1AFC872000B78E89 /* def.jpg in Resources */,
 				59845EDF1AFAF96600857ABD /* LaunchScreen.xib in Resources */,
 				59845EDC1AFAF96600857ABD /* Images.xcassets in Resources */,
 			);

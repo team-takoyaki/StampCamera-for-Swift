@@ -15,6 +15,8 @@ func GET_WINSIZE() -> CGSize {
     return TTKConstant.getWinSize()
 }
 
+
+
 class TTKConstant {
     static func Log(body: AnyObject! = "", function: String = __FUNCTION__) {
         print("\(function):")
