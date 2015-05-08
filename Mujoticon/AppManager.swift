@@ -14,6 +14,7 @@ class AppManager {
     var takenImage: UIImage? = nil
     var stampList: Array<String>? = nil
     var selectedStampIndex: Int = -1
+    var selectedStampViewList: Array<StampView> = []
 
     static func sharedManager() -> AppManager {
         if sharedInstance == nil {

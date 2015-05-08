@@ -18,6 +18,10 @@
 		598ABF621AFCC3C1008A5A2F /* stamp1.png in Resources */ = {isa = PBXBuildFile; fileRef = 598ABF5F1AFCC3C1008A5A2F /* stamp1.png */; };
 		598ABF631AFCC3C1008A5A2F /* stamp2.png in Resources */ = {isa = PBXBuildFile; fileRef = 598ABF601AFCC3C1008A5A2F /* stamp2.png */; };
 		598ABF641AFCC3C1008A5A2F /* stamp3.png in Resources */ = {isa = PBXBuildFile; fileRef = 598ABF611AFCC3C1008A5A2F /* stamp3.png */; };
+		598ABF661AFCEC4B008A5A2F /* StampView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598ABF651AFCEC4B008A5A2F /* StampView.swift */; };
+		598ABF691AFCF0D1008A5A2F /* direction.png in Resources */ = {isa = PBXBuildFile; fileRef = 598ABF671AFCF0D1008A5A2F /* direction.png */; };
+		598ABF6A1AFCF0D1008A5A2F /* garbage.png in Resources */ = {isa = PBXBuildFile; fileRef = 598ABF681AFCF0D1008A5A2F /* garbage.png */; };
+		598ABF6C1AFD028D008A5A2F /* Array+Object.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598ABF6B1AFD028D008A5A2F /* Array+Object.swift */; };
 		59EC252C1AFB92F700B78E89 /* TTKCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59EC25291AFB92F700B78E89 /* TTKCamera.swift */; };
 		59EC252D1AFB92F700B78E89 /* TTKConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59EC252A1AFB92F700B78E89 /* TTKConstant.swift */; };
 		59EC252E1AFB92F700B78E89 /* TTKDismissSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59EC252B1AFB92F700B78E89 /* TTKDismissSegue.swift */; };
@@ -55,6 +59,10 @@
 		598ABF5F1AFCC3C1008A5A2F /* stamp1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stamp1.png; sourceTree = "<group>"; };
 		598ABF601AFCC3C1008A5A2F /* stamp2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stamp2.png; sourceTree = "<group>"; };
 		598ABF611AFCC3C1008A5A2F /* stamp3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stamp3.png; sourceTree = "<group>"; };
+		598ABF651AFCEC4B008A5A2F /* StampView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StampView.swift; sourceTree = "<group>"; };
+		598ABF671AFCF0D1008A5A2F /* direction.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = direction.png; sourceTree = "<group>"; };
+		598ABF681AFCF0D1008A5A2F /* garbage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = garbage.png; sourceTree = "<group>"; };
+		598ABF6B1AFD028D008A5A2F /* Array+Object.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Object.swift"; sourceTree = "<group>"; };
 		59EC25291AFB92F700B78E89 /* TTKCamera.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TTKCamera.swift; sourceTree = "<group>"; };
 		59EC252A1AFB92F700B78E89 /* TTKConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TTKConstant.swift; sourceTree = "<group>"; };
 		59EC252B1AFB92F700B78E89 /* TTKDismissSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TTKDismissSegue.swift; sourceTree = "<group>"; };
@@ -113,6 +121,8 @@
 				59845EF41AFAFAFE00857ABD /* CameraViewController.swift */,
 				59EC25311AFBBB3F00B78E89 /* EditViewController.swift */,
 				598ABF5B1AFCB6BD008A5A2F /* StampListViewController.swift */,
+				598ABF651AFCEC4B008A5A2F /* StampView.swift */,
+				598ABF6B1AFD028D008A5A2F /* Array+Object.swift */,
 				59845ED81AFAF96600857ABD /* Main.storyboard */,
 				59845EDB1AFAF96600857ABD /* Images.xcassets */,
 				59845EDD1AFAF96600857ABD /* LaunchScreen.xib */,
@@ -160,6 +170,8 @@
 		59EC25371AFC85CF00B78E89 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				598ABF671AFCF0D1008A5A2F /* direction.png */,
+				598ABF681AFCF0D1008A5A2F /* garbage.png */,
 				598ABF5F1AFCC3C1008A5A2F /* stamp1.png */,
 				598ABF601AFCC3C1008A5A2F /* stamp2.png */,
 				598ABF611AFCC3C1008A5A2F /* stamp3.png */,
@@ -250,6 +262,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				598ABF6A1AFCF0D1008A5A2F /* garbage.png in Resources */,
 				59EC25391AFC85CF00B78E89 /* abc.jpg in Resources */,
 				598ABF621AFCC3C1008A5A2F /* stamp1.png in Resources */,
 				59845EDA1AFAF96600857ABD /* Main.storyboard in Resources */,
@@ -257,6 +270,7 @@
 				598ABF641AFCC3C1008A5A2F /* stamp3.png in Resources */,
 				598ABF631AFCC3C1008A5A2F /* stamp2.png in Resources */,
 				598ABF5E1AFCB802008A5A2F /* stamp.json in Resources */,
+				598ABF691AFCF0D1008A5A2F /* direction.png in Resources */,
 				59845EDF1AFAF96600857ABD /* LaunchScreen.xib in Resources */,
 				59845EDC1AFAF96600857ABD /* Images.xcassets in Resources */,
 			);
@@ -278,11 +292,13 @@
 			files = (
 				59EC25301AFBB84900B78E89 /* TTKEditImage.swift in Sources */,
 				59845ED51AFAF96600857ABD /* AppDelegate.swift in Sources */,
+				598ABF6C1AFD028D008A5A2F /* Array+Object.swift in Sources */,
 				59EC252E1AFB92F700B78E89 /* TTKDismissSegue.swift in Sources */,
 				59EC252C1AFB92F700B78E89 /* TTKCamera.swift in Sources */,
 				59EC25341AFBBB3F00B78E89 /* TopViewController.swift in Sources */,
 				59845EF51AFAFAFE00857ABD /* CameraViewController.swift in Sources */,
 				598ABF5C1AFCB6BD008A5A2F /* StampListViewController.swift in Sources */,
+				598ABF661AFCEC4B008A5A2F /* StampView.swift in Sources */,
 				59EC25361AFBBE5500B78E89 /* AppManager.swift in Sources */,
 				59EC252D1AFB92F700B78E89 /* TTKConstant.swift in Sources */,
 				59EC25331AFBBB3F00B78E89 /* EditViewController.swift in Sources */,

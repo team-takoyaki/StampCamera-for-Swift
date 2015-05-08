@@ -8,11 +8,16 @@
 
 import UIKit
 
+@objc protocol StampListViewControllerDelegate {
+    optional func didDissmissStampListViewController()
+}
+
 class StampListViewController: UIViewController,
                                UICollectionViewDataSource,
                                UICollectionViewDelegate {
 
     var stampList: Array<String>!
+    var delegate: StampListViewControllerDelegate?
     @IBOutlet var collectionView: UICollectionView!
     
     override func viewDidLoad() {
@@ -20,21 +25,13 @@ class StampListViewController: UIViewController,
         // Do any additional setup after loading the view, typically from a nib.
         
         UIApplication.sharedApplication().statusBarHidden = true
-    }
-    
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
         
-        self.initWithView()
-    }
-    
-    func initWithView() {
         // スタンプの一覧を取得する
         self.stampList = AppManager.sharedManager().stampList
         
         // 選択したスタンプのindexを初期化する
         AppManager.sharedManager().selectedStampIndex = -1
-    
+        
         // CollectionViewのデリゲートを設定する
         collectionView.dataSource = self
         collectionView.delegate = self
@@ -69,11 +66,12 @@ class StampListViewController: UIViewController,
         AppManager.sharedManager().selectedStampIndex = indexPath.row
         
         // StampListViewControllerを閉じる
-//        [self dismissViewControllerAnimated:YES completion:^{
-//            if (_delegate) {
-//                [_delegate didDismissStampListViewController];
-//            }
-//        }];
+        self.dismissViewControllerAnimated(true, completion: {
+            () -> Void in
+            if self.delegate != nil {
+                self.delegate!.didDissmissStampListViewController!()
+            }
+        })
     }
 }
 

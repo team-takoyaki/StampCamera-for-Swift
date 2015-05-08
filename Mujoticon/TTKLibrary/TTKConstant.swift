@@ -15,7 +15,7 @@ func GET_WINSIZE() -> CGSize {
     return TTKConstant.getWinSize()
 }
 
-
+let STROKE_WIDTH: CGFloat = 1.5
 
 class TTKConstant {
     static func Log(body: AnyObject! = "", function: String = __FUNCTION__) {
