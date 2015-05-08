@@ -108,8 +108,24 @@ class EditViewController: UIViewController {
         performSegueWithIdentifier("backToCameraView", sender: nil)
     }
     
+    func goToStampListView() {
+        // StampListViewControllerへ
+        performSegueWithIdentifier("goToStampListView", sender: nil)
+    }
+    
     @IBAction func didTapRetake(sender: AnyObject) {
         self.goToCameraView()
+    }
+    
+    @IBAction func didTapRotate(sender: AnyObject) {
+        let takenImage = AppManager.sharedManager().takenImage
+        let rotateImage = TTKEditImage.rotateImage(takenImage!, angle: 90)
+        AppManager.sharedManager().takenImage = rotateImage
+        self.imageView.image = rotateImage
+    }
+    
+    @IBAction func didTapStamp(sender: AnyObject) {
+        self.goToStampListView()
     }
     
     override func didReceiveMemoryWarning() {

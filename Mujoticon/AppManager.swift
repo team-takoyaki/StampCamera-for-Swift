@@ -12,6 +12,8 @@ class AppManager {
     static var sharedInstance: AppManager? = nil
 
     var takenImage: UIImage? = nil
+    var stampList: Array<String>? = nil
+    var selectedStampIndex: Int = -1
 
     static func sharedManager() -> AppManager {
         if sharedInstance == nil {
@@ -26,6 +28,21 @@ class AppManager {
     
     func initWithSetting() {
         self.takenImage = UIImage(named: "abc.jpg")
+        
+        self.readStamp()
+    }
+    
+    func readStamp() {
+        let path: String? = NSBundle.mainBundle().pathForResource("stamp", ofType: "json")
+        let fileHandle: NSFileHandle? = NSFileHandle(forReadingAtPath: path!)
+        if fileHandle == nil {
+            return
+        }
+        let data: NSData = fileHandle!.readDataToEndOfFile()
+        var stampList: Array = NSJSONSerialization.JSONObjectWithData(data,
+                                            options: NSJSONReadingOptions.AllowFragments,
+                                            error: nil) as! Array<String>
+        self.stampList = stampList
     }
 }
 

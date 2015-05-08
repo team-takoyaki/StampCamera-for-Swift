@@ -24,6 +24,12 @@ class TTKEditImage {
         return image
     }
 
+    /**
+    * @brief 画像を指定した座標で切り抜く
+    * @param image 対象の画像
+    * @param rect 切り抜く座標
+    * @return 切り抜いた画像
+    */
     static func cutImage(image: UIImage, rect: CGRect) -> UIImage {
         let imageWidth: CGFloat = image.size.width
         let imageHeight: CGFloat = image.size.height
@@ -55,6 +61,48 @@ class TTKEditImage {
         UIGraphicsEndImageContext();
         
         return reverseImage
+    }
+    
+    /**
+    * @brief 画像を回転させる
+    * @param image 対象の画像
+    * @param angle 角度
+    * @return 回転させた画像
+    */
+    static func rotateImage(image: UIImage, angle: CGFloat) -> UIImage {
+        var context: CGContextRef!
+        
+        // TODO: 複雑な角度には対応する
+        switch (angle) {
+            case 90:
+                UIGraphicsBeginImageContext(CGSizeMake(image.size.height, image.size.width));
+                context = UIGraphicsGetCurrentContext();
+                CGContextTranslateCTM(context, image.size.height, image.size.width);
+                CGContextScaleCTM(context, 1, -1);
+                CGContextRotateCTM(context, CGFloat(M_PI_2));
+                break;
+            case 180:
+                UIGraphicsBeginImageContext(CGSizeMake(image.size.width, image.size.height));
+                context = UIGraphicsGetCurrentContext();
+                CGContextTranslateCTM(context, image.size.width, 0);
+                CGContextScaleCTM(context, 1, -1);
+                CGContextRotateCTM(context, -CGFloat(M_PI));
+                break;
+            case 270:
+                UIGraphicsBeginImageContext(CGSizeMake(image.size.height, image.size.width));
+                context = UIGraphicsGetCurrentContext();
+                CGContextScaleCTM(context, 1, -1);
+                CGContextRotateCTM(context, -CGFloat(M_PI_2));
+                break;
+            default:
+                return image;
+        }
+    
+        CGContextDrawImage(context, CGRectMake(0, 0, image.size.width, image.size.height), image.CGImage);
+        let rotateImage = UIGraphicsGetImageFromCurrentImageContext();
+        UIGraphicsEndImageContext();
+    
+        return rotateImage;
     }
 }
 
