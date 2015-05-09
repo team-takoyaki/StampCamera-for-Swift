@@ -8,13 +8,17 @@
 
 import UIKit
 
+@objc protocol EditViewControllerDelegate {
+    optional func didDismissEditViewControllerAndGoToTop()
+}
+
 class EditViewController: UIViewController,
                           StampListViewControllerDelegate,
                           StampViewDelegate {
     
     @IBOutlet var imageView: UIImageView!
-
     var stampNumber = -1
+    var delegate: EditViewControllerDelegate? = nil
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -66,7 +70,6 @@ class EditViewController: UIViewController,
     
         // ImageViewの位置を調整する
         let winSize = GET_WINSIZE()
-        let toolBarHeight: CGFloat = 0
         let imageViewFrame = self.imageView.frame
         let y = winSize.height / 2 - height / 2
         self.imageView.frame = CGRectMake(imageViewFrame.origin.x,
@@ -230,6 +233,14 @@ class EditViewController: UIViewController,
         
          // EditViewControllerがタッチイベントを取得しているので現在のスタンプリストの全ての枠を消す
         self.clearStampDecoration(AppManager.sharedManager().selectedStampViewList)
+    }
+    
+    @IBAction func didTapTop(sender: AnyObject) {
+        self.dismissViewControllerAnimated(false, completion: {
+            if self.delegate != nil {
+                self.delegate!.didDismissEditViewControllerAndGoToTop!()
+            }
+        })
     }
     
     /**

@@ -22,6 +22,8 @@
 		598ABF691AFCF0D1008A5A2F /* direction.png in Resources */ = {isa = PBXBuildFile; fileRef = 598ABF671AFCF0D1008A5A2F /* direction.png */; };
 		598ABF6A1AFCF0D1008A5A2F /* garbage.png in Resources */ = {isa = PBXBuildFile; fileRef = 598ABF681AFCF0D1008A5A2F /* garbage.png */; };
 		598ABF6C1AFD028D008A5A2F /* Array+Object.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598ABF6B1AFD028D008A5A2F /* Array+Object.swift */; };
+		59A480F41AFD215500012B58 /* AlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A480F31AFD215500012B58 /* AlbumViewController.swift */; };
+		59A480F61AFE5EC800012B58 /* PreEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A480F51AFE5EC800012B58 /* PreEditViewController.swift */; };
 		59EC252C1AFB92F700B78E89 /* TTKCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59EC25291AFB92F700B78E89 /* TTKCamera.swift */; };
 		59EC252D1AFB92F700B78E89 /* TTKConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59EC252A1AFB92F700B78E89 /* TTKConstant.swift */; };
 		59EC252E1AFB92F700B78E89 /* TTKDismissSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59EC252B1AFB92F700B78E89 /* TTKDismissSegue.swift */; };
@@ -63,6 +65,8 @@
 		598ABF671AFCF0D1008A5A2F /* direction.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = direction.png; sourceTree = "<group>"; };
 		598ABF681AFCF0D1008A5A2F /* garbage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = garbage.png; sourceTree = "<group>"; };
 		598ABF6B1AFD028D008A5A2F /* Array+Object.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Object.swift"; sourceTree = "<group>"; };
+		59A480F31AFD215500012B58 /* AlbumViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumViewController.swift; sourceTree = "<group>"; };
+		59A480F51AFE5EC800012B58 /* PreEditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreEditViewController.swift; sourceTree = "<group>"; };
 		59EC25291AFB92F700B78E89 /* TTKCamera.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TTKCamera.swift; sourceTree = "<group>"; };
 		59EC252A1AFB92F700B78E89 /* TTKConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TTKConstant.swift; sourceTree = "<group>"; };
 		59EC252B1AFB92F700B78E89 /* TTKDismissSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TTKDismissSegue.swift; sourceTree = "<group>"; };
@@ -116,9 +120,11 @@
 				59EC25371AFC85CF00B78E89 /* Resources */,
 				59EC25281AFB92F700B78E89 /* TTKLibrary */,
 				59EC25351AFBBE5500B78E89 /* AppManager.swift */,
+				59A480F31AFD215500012B58 /* AlbumViewController.swift */,
 				59845ED41AFAF96600857ABD /* AppDelegate.swift */,
 				59EC25321AFBBB3F00B78E89 /* TopViewController.swift */,
 				59845EF41AFAFAFE00857ABD /* CameraViewController.swift */,
+				59A480F51AFE5EC800012B58 /* PreEditViewController.swift */,
 				59EC25311AFBBB3F00B78E89 /* EditViewController.swift */,
 				598ABF5B1AFCB6BD008A5A2F /* StampListViewController.swift */,
 				598ABF651AFCEC4B008A5A2F /* StampView.swift */,
@@ -292,6 +298,8 @@
 			files = (
 				59EC25301AFBB84900B78E89 /* TTKEditImage.swift in Sources */,
 				59845ED51AFAF96600857ABD /* AppDelegate.swift in Sources */,
+				59A480F61AFE5EC800012B58 /* PreEditViewController.swift in Sources */,
+				59A480F41AFD215500012B58 /* AlbumViewController.swift in Sources */,
 				598ABF6C1AFD028D008A5A2F /* Array+Object.swift in Sources */,
 				59EC252E1AFB92F700B78E89 /* TTKDismissSegue.swift in Sources */,
 				59EC252C1AFB92F700B78E89 /* TTKCamera.swift in Sources */,

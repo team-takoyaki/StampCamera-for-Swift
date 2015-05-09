@@ -21,5 +21,16 @@ class TopViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+
+    @IBAction func didTapCamera(sender: AnyObject) {
+        // CameraViewControllerへ
+        performSegueWithIdentifier("goToCameraView", sender: nil)
+    }
+    
+    @IBAction func didTapAlbum(sender: AnyObject) {
+        // AlbumViewControllerへ
+        performSegueWithIdentifier("goToAlbumView", sender: nil)
+    }
+    
 }
 
