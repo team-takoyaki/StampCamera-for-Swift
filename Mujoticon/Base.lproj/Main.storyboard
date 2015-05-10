@@ -216,16 +216,8 @@
                                     <constraint firstItem="KP7-aN-XIz" firstAttribute="leading" secondItem="2lr-mw-thW" secondAttribute="leading" id="PM7-SJ-epW"/>
                                     <constraint firstItem="KP7-aN-XIz" firstAttribute="height" secondItem="2lr-mw-thW" secondAttribute="height" id="UC1-Hh-uFg"/>
                                     <constraint firstAttribute="trailing" secondItem="KP7-aN-XIz" secondAttribute="trailing" id="Y3n-oP-VKq"/>
-                                    <constraint firstAttribute="centerY" secondItem="KP7-aN-XIz" secondAttribute="centerY" constant="-0.5" id="cdA-Fc-0Hk"/>
                                     <constraint firstItem="KP7-aN-XIz" firstAttribute="width" secondItem="2lr-mw-thW" secondAttribute="width" id="d6k-vR-Qc8"/>
-                                    <constraint firstAttribute="centerX" secondItem="KP7-aN-XIz" secondAttribute="centerX" id="kfX-63-Nv9"/>
                                 </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="cdA-Fc-0Hk"/>
-                                        <exclude reference="kfX-63-Nv9"/>
-                                    </mask>
-                                </variation>
                             </scrollView>
                             <view alpha="0.49999999999999961" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KM0-VG-361" userLabel="changeAspectFrame1">
                                 <rect key="frame" x="0.0" y="444" width="320" height="53"/>
