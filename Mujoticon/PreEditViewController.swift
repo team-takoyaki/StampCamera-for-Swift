@@ -51,7 +51,7 @@ class PreEditViewController: UIViewController,
                                            scrollViewY,
                                            self.scrollView.frame.width,
                                            self.scrollView.frame.height)
-    
+        
         // 選択中の画像を表示する
         var image = AppManager.sharedManager().takenImage
         self.imageView.image = image
